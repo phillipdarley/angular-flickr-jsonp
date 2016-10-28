@@ -1,2 +1,8 @@
-# angular-flickr-jsonp
-angular1.5 es6 with webpack to demonstrate a simple JSONP call. 
+# webpack-starter
+simple starter project of webpack+less+babel
+
+# run dev
+npm run start
+
+# build for production
+npm run prod

@@ -1,0 +1,27 @@
+<div class="searchContent">
+
+	<form name="flickSearch">
+		<label class="searchLabel"><span>Search:</span></label>
+		<input type="text" name="searchTxt" class="searchTextInput" ng-model="$ctrl.searchText" placeholder="search term..." />
+		<button name="search" class="searchBtn">search</button>
+	</form>
+
+	<div id="searchResults">
+
+		<div ng-if="!$ctrl.searchResults && $ctrl.searchText">
+			<span>Loading...<span>
+		</div>
+
+        <div ng-repeat="searchResultItem in $ctrl.searchResults">
+            <div class="searchResultItem">
+                <a ng-href="{{searchResultItem.fullImageHref}}" target="_blank">
+                    <img ng-src="{{searchResultItem.imageUrl}}" class="imageThumbnail"/>
+                </a>
+                <span class="author">{{searchResultItem.author}}</span>
+		</div>
+
+	</div>
+
+</div>
+
+</div>
