@@ -14,7 +14,7 @@ class FlickrService {
         this.$http = $http;
         this.$log = $log;
 
-        //$sce.trustAsResourceUrl(API_URL);
+        $sce.trustAsResourceUrl(API_URL);
     }
 
     getImagesByTagText(text) {
